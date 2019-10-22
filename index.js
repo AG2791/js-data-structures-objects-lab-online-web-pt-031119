@@ -8,8 +8,9 @@ function updateDriveWithKeyAndValue(driver,key, value) {
 //   newDriver[quiteOne] = "stig";
 //   return newDriver;
 
-  return Object.assign(driver, { quiteOne:"stig"} ); //this is distructive 
+  // return Object.assign(driver, { quiteOne:"stig"} ); //this is distructive 
   // return Object.assign({}, driver, { quiteOne:"stig"} );  this is non-distructive 
+  return Object.assign({}, driver, { [key]: value });
 }
 
 function destructivelyUpdateDriverWithKeyAndValue(driver,object, key) {
