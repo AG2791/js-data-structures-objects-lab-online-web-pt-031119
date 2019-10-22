@@ -3,7 +3,7 @@
 // let driver = {oldMan: "jeremy",smarOne: "james", shortOne: "richard"}
 let  driver = {};
 
-function updateDriveWithKeyAndValue(driver,key, value) {
+function destructivelyUpdateDriverWithKeyAndValue()(driver,key, value) {
 //   const newDriver = {...driver};
 //   newDriver[quiteOne] = "stig";
 //   return newDriver;
